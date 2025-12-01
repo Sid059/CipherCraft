@@ -73,7 +73,11 @@ function swapMessages() {
 function clearAll() {
     originalMessage.value = '';
     encryptedMessage.value = '';
+<<<<<<< HEAD
     //shiftInput.value = 3;
+=======
+    shiftInput.value = 3;
+>>>>>>> ddf1e9b53e7e8da73c7bc923907296c3910fd613
     originalMessage.focus();
 
     // reattaching event listeners
