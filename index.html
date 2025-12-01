@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher Tool | Siddharth Rai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔐 Caesar Cipher Tool</h1>
+            <p class="subtitle">Interactive shift cipher encryption and decryption tool</p>
+        </header>
+
+        <div class="controls">
+            <div class="shift-control">
+                <label for="shiftValue">Shift Value:</label>
+                <input type="number" id="shiftValue" min="1" max="25" value="3">
+                <span class="hint">(1-25)</span>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="originalMessage">Original Message:</label>
+                <textarea id="originalMessage" placeholder="Enter your message to encrypt..."></textarea>
+                <button id="encryptBtn" class="btn encrypt">Encrypt Message</button>
+            </div>
+
+            <div class="input-group">
+                <label for="encryptedMessage">Encrypted Message:</label>
+                <textarea id="encryptedMessage" placeholder="Encrypted message will appear here..." ></textarea>
+                <button id="decryptBtn" class="btn decrypt">Decrypt Message</button>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="swapBtn" class="btn swap">↕ Swap Messages</button>
+            <button id="clearBtn" class="btn clear">Clear All</button>
+            <button id="copyBtn" class="btn copy">Copy Encrypted</button>
+        </div>
+
+        <div class="info-section">
+            <h3>About This Project</h3>
+            <p>This tool implements a <strong>Caesar Cipher (Shift Cipher)</strong> algorithm that I developed using JavaScript. It demonstrates:</p>
+            <ul>
+                <li>Object-oriented programming with ES6 classes</li>
+                <li>Character encoding/decryption algorithms</li>
+                <li>DOM manipulation and event handling</li>
+                <li>Responsive web design</li>
+                <li>Clean, maintainable code architecture</li>
+            </ul>
+            <p class="tech-stack"><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript (ES6+)</p>
+        </div>
+    </div>
+
+    <script type= "module" src="script.js" defer></script>
+</body>
+</html>
